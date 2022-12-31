@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+
+
+
+</head>
+
+<body class="container px-2 mx-auto">
+
+ 
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+  <a href="https://flowbite.com/" class="flex items-center">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo here">
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">OLLAN PHARMACY</span>
+  </a>
+  <div class="flex md:order-2">
+
+     
+<!-- drawer init and show -->
+<div class="text-center">
+  <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-contact" data-drawer-show="drawer-contact" aria-controls="drawer-contact">
+  Show contact form
+  </button>
+</div>
+
+<!-- drawer component -->
+<div id="drawer-contact" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-contact-label">
+  <h5 id="drawer-label" class="inline-flex items-center mb-6 text-base font-semibold text-gray-500 uppercase dark:text-gray-400"><svg class="w-5 h-5 mr-2" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>Contact us</h5>
+  <button type="button" data-drawer-dismiss="drawer-contact" aria-controls="drawer-contact" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+     <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+     <span class="sr-only">Close menu</span>
+  </button>
+  <form action="#" class="mb-6">
+     <div class="mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
+     </div>
+     <div class="mb-6">
+        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+        <input type="text" id="subject" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required>
+     </div>
+     <div class="mb-6">
+        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+        <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
+     </div>
+     <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
+  </form>
+  <p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+     <a href="#" class="hover:underline">info@company.com</a>
+  </p>
+  <p class="text-sm text-gray-500 dark:text-gray-400">
+     <a href="#" class="hover:underline">212-456-7890</a>
+  </p>
+</div>
+
+
+    <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="./about.html" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 active:bg-violet-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container mx-auto lg:flex ">
+  
+  <div>
+<img class="max-w-lg h-auto rounded-lg " src="\img\img2.jpeg" alt="image description">
+  </div>
+
+  <div class="mt-8 md:basis-1/3">
+    
+<h1 class="mb-4 ml-966 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white px-16 xl:px-48">OLLAN HOLDINGS</h1>
+<p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Welcome to our Pharmacy's website we are excited to offer our customers a convenient and easy way to access our services, learn more about us and connect with us from anywhere in the world.
+</p>
+</div>
+
+
+</div>
+
+<div class="text-center mt-20 text-lg font-normal">
+  <p>Welcome to our company's website! We are  have been serving [industry/customer base] for over [number] years. Our team is made up of highly skilled and dedicated professionals who are passionate about delivering the best possible products/services to our customers. We believe in the power of Integrity and Quality and strive to embody these values in everything we do. Thank you for choosing us as your partner in [industry/field]. We look forward to working with you and helping you achieve your a better life.</p>
+</div>
+
+
+<!--boxes-->
+<div class="container flex flex-wrap justify-between items-center mx-auto mt-20">
+  <div >
+    <figure class="max-w-lg">
+      <img class="max-w-full h-auto rounded-lg" src="\img\img1.jpg" alt="image description">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">We also offer a number of services to make managing your health even easier. Our online refill system allows you to request refills and check the status of your prescription from the comfort of your own home. We also offer convenient drive-thru and delivery options for those who are unable to come into the pharmacy.
+
+        
+
+      </figcaption>
+    </figure>
+    </div>
+
+  <div>
+<figure class="max-w-lg">
+  <img class="max-w-full h-auto rounded-lg" src="\img\img2.jpeg" alt="image description">
+  <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Whether you are at home, at the office, or on the go, we have a range of convenient water bottle sizes and types to suit your needs. From small single-serving bottles to larger jugs, we have something for everyone.
+
+  </figcaption>
+</figure>
+</div>
+
+  <div>
+    <figure class="max-w-lg">
+      <img class="max-w-full h-auto rounded-lg" src="\img\img 3.jpg" alt="image description">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">Thank you for choosing our supermarket as your go-to source for all of your grocery needs. We are committed to providing you with the highest quality products and exceptional customer service.
+
+      </figcaption>
+    </figure>
+    </div>
+  <div>
+    <figure class="max-w-lg">
+      <img class="max-w-full h-auto rounded-lg" src="\img\img1.jpg" alt="image description">
+      <figcaption class="mt-2 text-sm text-center text-gray-500 dark:text-gray-400">We are committed to providing our customers with the highest quality cotton wool products at an affordable price. Thank you for choosing us as your trusted source for all of your cotton wool needs.
+
+      </figcaption>
+    </figure>
+    </div> 
+  
+</div>
+
+
+
+  <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+
+</body>
+</html>
